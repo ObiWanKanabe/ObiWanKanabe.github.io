@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-        <title>LucasKanabe - Game Programmer</title>
+        <title>LucasKanabe - Blue Flame</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,8 +31,8 @@
                 <!-- Main navigation items -->
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav mr-auto justify-content-end">
-                        <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -70,53 +70,25 @@
             <div class="container">
    
                 <div class="text-center padded-box pb-0">
-                        <h2>Projects</h2>
-                        <p class="lead">These are the projects that I've worked on during my time at Humber in the Game Programming course. Some are from my first year, and others I'm still working on today. 
-                        Both a small description and captures accompany each project, as well as link to the public repository of the project on GitHub. Hope you enjoy!</p>
+                        <h2>Blue Flame Engine</h2>
+                        <img src="images/mecc.png" width="35%" height="35%" hspace = "20">
+                        <br/>
+                        <br/>
+                        <h3>At a glance</h3>
+                        <p class="lead">Blue flame engine was created by myself, Juan Toro, Miguel Favero, and Ivan boyko for our capstone project at Humber College. Written in C++ and OpenGL, we've also developed a 3D demo game to show its capabilities.</p>
+                        <h3>Features</h3>
+                        <p class="lead">Current features in the most recent release include: Scene management, model and texture loading, lighting effects, particle effects, fixed physics simulation, rigidbody manipulation, collision systems, projectile motion, music, audio clips, gamepad input, UI implementation, and more.
+                        </p>
+                        <h3>My Contribution</h3>
+                        <p class="lead">During the creation of the Blue Flame Engine, my role in the project was the creation of all physics systems to support the development of the demo game M.E.C.C. This has involved the creation of collision and physics components that can be attached to game objects to make them active rigidbodies. Because of the scope and nature of the game, I decided to use tight-fitting AABB volumes to encapsulate physics objects. When loading a model or creating a primitive shape and adding a collision component, a collision volume is automatically generated. Physics components can also be added to control the rigidbody simulation. This component can be set to dynamic or static, and stores the position, velocity, acceleration, and acting forces. The physics simulation is impulse and force based, and done on its own fixed timestep, seperate from the rendering system. This ensures the simulation is the same on all machines, and an interpolation is calculated to ensure the physics objects do not appear out of sync during render time. Video below for demonstration: </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1Aa_LetVEEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p class="lead">For the demo game M.E.C.C., projectiles motion plays an important role, since every character in the game has their own unique set of moves that require different projectiles. The projectile class was created for this purpose, able to be heavily manipulated. The class stores the impulse force added to the projectile when launched, the acting force on the projectile during motion to create curving effects, and the knockback force applied to the enemy player when hit. Layer and tag checking is done, depending on the friendly fire settings chosen, so that you cannot hit your self or your teamate with your projectiles. Video below for demonstration of unique projectiles used: </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gTG8CWgIVw0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <h3>Whats Next</h3>
+                        <p class="lead">An improvement to the engine that I would like to put in some time in the future are debugging for the collision components, so we're able to see the bounding volumes in world space. I'd also like to make the collision response more general so that it could easily integrated in games that don't require its own physics..</p>
+                        <a href="https://github.com/jdtoro19/BlueFlame"> <img src="images/github.png" hspace = "20"></a>
 
                 </div>
-                
-
-
-                <div class="padded-box row">
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                          <img class="card-img-top" src="images/mecc.png" alt="Card image cap">
-                          <div class="card-body">
-                          	<h4>Blue Flame Engine</h4>
-                            <p class="card-text">Developed using C++ and OpenGL.</p>
-                            <a href="blueflame.html" class="btn btn-primary">More Info</a>
-                              <a target= "_blank" href="https://github.com/jdtoro19/BlueFlame" class="btn btn-secondary">GitHub</a>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                          <img class="card-img-top" src="images/cryographicengine.png" alt="Card image cap">
-                          <div class="card-body">
-                          	<h4>Cryographic Engine</h4>
-                            <p class="card-text">Developed using C++ and OpenGL. </p>
-                             <a href="cryographic.html" class="btn btn-primary">More Info</a>
-                              <a target="_blank" href="https://github.com/ObiWanKanabe/CryographicEngine" class="btn btn-secondary">GitHub</a>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                          <img class="card-img-top" src="images/pitfall.png" alt="Card image cap">
-                          <div class="card-body">
-                          	<h4>PitFall</h4>
-                            <p class="card-text">Developed using C++ and SDL2.  </p>
-                             <a href="pitfall.html" class="btn btn-primary">More Info</a>
-                              <a target="_blank" href="https://github.com/ObiWanKanabe/Pitfall" class="btn btn-secondary">GitHub</a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <center><h2> Check back later to see other old projects I've worked on! </h2></center>
-                <br/>
         </div>
        
         <!-- Gray bg jumbotron -->
