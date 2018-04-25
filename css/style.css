@@ -6884,3 +6884,7 @@ html {
 
   body {
     margin-top: 58px; } }
+
+  iframe, object, embed {
+    max-width: 100%;
+  }
