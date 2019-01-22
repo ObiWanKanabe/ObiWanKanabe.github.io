@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 	<head>
         <title>LucasKanabe - Cryograpgic Engine</title>
@@ -70,31 +70,37 @@
             <div class="container">
    
                 <div class="text-center padded-box pb-0">
-                        <h2>Cryographic Engine</h2>
-                        <img src="images/cyborgNormals.png" width="45%" height="45%" hspace = "20">
-                        <br/>
-                        <br/>
-                        <h3>At a glance</h3>
-                        <p class="lead">I created the Crographic Engine during my 5th semester game engine class at Humber College. Written in C++ and OpenGl, I've used the creation of this engine to help me advance my knowledge of the OpenGL framework and 3D graphics programming as a whole.</p>
-                        <h3>Features</h3>
-                        <p class="lead">Current main features in the most recent release include: Scene graph usage, mesh, texture, and shader management, primitive shape and mesh creation, model loading, lighting, normal mapping, basic reflectivity, skyboxes, and cameras. 
-                        </p>
-                        <h2>My Contribution</h2>
-                        <p class="lead">During the creation of the Cryographic Engine, I've learned how to use OpenGl to create 3D graphics in an organized manner. This has involved me learning how to manipulate vertices and fragments in the shader and also the models/meshes that contain them in the game space. </p>
-                        <h3>Scene Graph and Resource Management</h3>
-                        <p class="lead">Gameobjects and their models/meshes can be created in the game scene by the user using a scene graph structure, to organize a parent-child relationship. These meshes and their materials, as well as shaders, can be reused for different gameobjects without instantiating them more than once. Below is a video of two meshes being reused on all the gameobjects in the scene, while also showing all the child gameobjects following the parents position change.</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/v4WFY-FgfSg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        <p class="lead"></p>
-                        <h3>Models, Skyboxes, and Reflection</h3>
-                         <p class="lead">Model loading is also available in the engine, being able to manipulate each individual mesh and re-use them throughout the engine like all other meshes. Below is a picture of the a nanosuit model from Crysis with a spotlight effect and reflection maps able to react with the skybox.</p>
-                         <img src="images/nanosuit_lighting_reflections.png" width="50%" height="50%" hspace = "20">
-                         <p class="lead"></p>
-                         <h3>Cascading Shadow Maps</h3>
-                         <p class="lead">Shadows are now supported in the engine. The directional light of the scene can cast shadows onto any object below. Using cascaded shadow maps, or CSM, I'm ensuring that the fidelity of close up shadows are kept, whilst also shadowing distant objects to keep realism.. Below is a small video showing my simple implementation of CSM in my engine.</p>
-                         <iframe width="560" height="315" src="https://www.youtube.com/embed/WP9l0J2xkWw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        <h3>Whats Next</h3>
-                        <p class="lead">The features I'm going to be working on implementing in the future include: advanced lighting effects, shadow mapping, deffered rendering, HDR, physics based rendering, rigidbodies, and more. I'm currently working on improving the lighting in the engine, and adding shadow mapping.</p>
-                        <a href="https://github.com/ObiWanKanabe/CryographicEngine"> <img src="images/github.png" hspace = "20"></a>
+                    <h2>Cryographic Engine</h2>
+                    <img src="images/cyborgNormals.png" width="45%" height="45%" hspace="20">
+                    <br />
+                    <br />
+                    <h3>At a glance</h3>
+                    <p class="lead">I created the Crographic Engine during my 5th semester game engine class at Humber College. Written in C++ and OpenGl, I've used the creation of this engine to help me advance my knowledge of the OpenGL framework and 3D graphics programming as a whole.</p>
+                    <h3>Features</h3>
+                    <p class="lead">
+                        Current main features in the most recent release include: Scene graph usage, mesh, texture, and shader management, primitive shape and mesh creation, model loading, lighting, normal mapping, basic reflectivity, skyboxes, and cameras.
+                    </p>
+                    <h2>My Contribution</h2>
+                    <p class="lead">During the creation of the Cryographic Engine, I've learned how to use OpenGl to create 3D graphics in an organized manner. This has involved me learning how to manipulate vertices and fragments in the shader and also the models/meshes that contain them in the game space. </p>
+                    <h3>Scene Graph and Resource Management</h3>
+                    <p class="lead">Gameobjects and their models/meshes can be created in the game scene by the user using a scene graph structure, to organize a parent-child relationship. These meshes and their materials, as well as shaders, can be reused for different gameobjects without instantiating them more than once. Below is a video of two meshes being reused on all the gameobjects in the scene, while also showing all the child gameobjects following the parents position change.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v4WFY-FgfSg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p class="lead"></p>
+                    <h3>Models, Skyboxes, and Reflection</h3>
+                    <p class="lead">Model loading is also available in the engine, being able to manipulate each individual mesh and re-use them throughout the engine like all other meshes. Below is a picture of the a nanosuit model from Crysis with a spotlight effect and reflection maps able to react with the skybox.</p>
+                    <img src="images/nanosuit_lighting_reflections.png" width="50%" height="50%" hspace="20">
+                    <p class="lead"></p>
+                    <h3>Cascading Shadow Maps</h3>
+                    <p class="lead">Shadows are now supported in the engine. The directional light of the scene can cast shadows onto any object below. Using cascaded shadow maps, or CSM, I'm ensuring that the fidelity of close up shadows are kept, whilst also shadowing distant objects to keep realism.. Below is a small video showing my simple implementation of CSM in my engine.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WP9l0J2xkWw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p class="lead"></p>
+                    <h3>HDR/Bloom</h3>
+                    <p class="lead">HDR and bloom have been implemented in the engine to enhance the lighting and detail during different types of scenes. The exposure can be changed to either highlight the bright or dark areas of the scene, allowing detail to always be kept no matter the lighting available. For brightly lit parts of the scene, bloom adds visual flair by blurring the fragments that pass a certain threshold. Below is an image of bright lights with and without bloom.</p>
+                    <img src="images/bloomComparison.png" width="50%" height="50%" hspace="20">
+                    <p class="lead"></p>
+                    <h3>Whats Next</h3>
+                    <p class="lead">The features I'm going to be working on implementing in the future include: advanced lighting effects, shadow mapping, deffered rendering, physics based rendering, rigidbodies, and more. I'm currently working on improving the lighting in the engine, and adding shadow mapping.</p>
+                    <a href="https://github.com/ObiWanKanabe/CryographicEngine"> <img src="images/github.png" hspace="20"></a>
 
                 </div>
         </div>
